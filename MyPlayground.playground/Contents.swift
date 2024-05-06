@@ -29,30 +29,47 @@
 ////var nullData = NULL // 불가
 ////print(nilData == nullData)
 
+//
+//struct Town {
+//    let name: String
+//    var citizens: [String]
+//    var resources: [String: Int]
+//    
+//    //초기화 예약어
+//    init(name: String, citizens: [String], resources: [String : Int]) {
+//        //self -> 구조체의 property (this 개념)
+//        self.name = name
+//        self.citizens = citizens
+//        self.resources = resources
+//    }
+//    
+//    func fortify(){
+//        print("method!")
+//    }
+//}
+//
+////var myTown = Town()
+//
+////print(myTown)
+////print("\(myTown.name) has \(myTown.resources["Grain"]!) bags of grain.")
+//
+//var anotherTown = Town(name: "Another towon", citizens: ["Tom"], resources: ["Coconuts": 100])
+//anotherTown.citizens.append("Kim")
+//anotherTown.fortify()
 
-struct Town {
-    let name: String
-    var citizens: [String]
-    var resources: [String: Int]
-    
-    //초기화 예약어
-    init(name: String, citizens: [String], resources: [String : Int]) {
-        //self -> 구조체의 property (this 개념)
-        self.name = name
-        self.citizens = citizens
-        self.resources = resources
-    }
-    
-    func fortify(){
-        print("method!")
-    }
+func greeting(_ text: String){
+    print("\(text) hi")
 }
 
-//var myTown = Town()
+greeting("Yo")
 
-//print(myTown)
-//print("\(myTown.name) has \(myTown.resources["Grain"]!) bags of grain.")
-
-var anotherTown = Town(name: "Another towon", citizens: ["Tom"], resources: ["Coconuts": 100])
-anotherTown.citizens.append("Kim")
-anotherTown.fortify()
+func greeting2(_ text: String) -> Bool {
+    print("\(text) hi")
+    if(text == "Yo") {
+        return true
+    }else {
+        return false
+    }
+}
+var result = greeting2("Yo")
+print(result)
