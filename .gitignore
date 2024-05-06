@@ -1,0 +1,46 @@
+# Xcode
+##
+.DS_Store
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+*.xcodeproj/xcshareddata/xcschemes/*.xcscheme
+*.xcodeproj/xcshareddata/xcschemes/*.xcscheme.management.plist
+*.xcworkspace/xcuserdata/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.moved-aside
+*.xcuserstate
+
+# CocoaPods
+##
+/Pods/
+
+# Carthage
+##
+/Carthage/Build/
+
+# fastlane
+##
+/fastlane/report.xml
+/fastlane/Preview.html
+/fastlane/screenshots/**/*.png
+/fastlane/test_output
+
+# Swift Package Manager
+##
+.build/
+/.swiftpm/xcode/package.xcworkspace
+/.swiftpm/xcode/xcuserdata/
+
+# App Thinning (https://developer.apple.com/library/archive/qa/qa1795/_index.html)
+##
+Modeling/
